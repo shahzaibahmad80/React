@@ -1,0 +1,149 @@
+ES5 now>ES6
+
+let,const..
+
+let var..
+{
+let,cosnt > if, ka scop hta ha and func ka scope,,() >> {} >> sy bahir nhi aygy...
+---------------------
+
+"let" and "const" ye dono scoped...based..hty han....so, "let,const" > ye dono scoped based hty han.
+ mtlb >> {} >> in curly brackets "{} in ky andar scoped hta ha inka" inky bahir nahin hota. (much better,for security purpose stuff)
+lekin "var" scoped ky based nahin hota ,kahin bhi isko hm access kr skty han, 
+and i think "ES5" mn ye just "var" tha but "ES6" mn let and const ka concept aya tha. these 2 are mostly used.
+
+>> "var ki val ,scope sy bahir, leak ho jati ha..."
+
+}
+----------------------------
+{
+
+}
+-----------------
+functions:
+2types:
+	1)  simple
+	2)  arrow func
+
+both same : but syntax different.
+;;;;;
+type#1 "1)simple"
+function(parameters) 
+params,,
+method in scoped...
+
+call the functions>>> arguments(when calling)
+
+return keyword...
+
+------------------------
+Arrow functions > 
+without func name...
+func ref pass kia...but execite nahi kia>call 
+
+-----
+both are okay >>> "dono faidamand"
+-----
+same line mn use kr ky ,return use kiye baghair ,output dy dyga.
+.....................
+return...
+-----
+---------------------------------------------------------------
+ARRAY'S METHODS. (Arrays has Methods... few of them> .filter,forEach,.reduce, .map.
+
+like .filter(return new (filtered)array without changing underlying object that we are filtering over))
+------------------------------------------------------------------------------------------
+1) forEach (Array Method)
+ye array ky har element par loop chala kr koi kam krwaata ha. LEKIN ye kuch nahin RETURN NAHIN karta.
+ye "forEach" method array ky har element py aik bar chalta ha or hm koi bhi kam us element ky sath kr skty han.
+lekin ye method koi "New Array" return nahin karta,sirf kam perform karta ha. 
+forEach > Sirf side-effect ke liye use hota hai (jaise print karna, value ko update karna etc.)
+
+foreach method callback function leta ha....(even array ka har method call back function leta ha)
+1item
+
+interview question > foreach(method) ka return type kia ha>???? undefined ha.... imp queston..
+
+q.k >foreach mehtod kbhi b "newArray" return nahin krta::"ye sirf iterate krta ha...but new-Array nahin deta ya return nahin krta.."
+.....
+so,foreach ka return type "undefined" hota ha.
+-------------------------------------------------------------------------------------------------
+;;;;
+but i want k foreach newArray return kry then what???
+we user filters.....(we can also use map"gpt")
+>>>so we use filters...
+myArr.filter()
+
+">filter() bhi aik call back fun lyga like foreach..."
+kuch condition lga kr hmein new array return kr rah tha..
+----
+---------------------------------------------------------------------
+
+--------------------
+
+{call back lazmi lyty han,,,foreach,map,reduce,filters}
+--------------------
+.map > iterate kr skta ha and also perform actions as well like .filters.
+.map("> greater than" condition mn false and true return krta ha. )
+but .filter hmein ("> graeter than" case like Array is [1,2,3,4,5,6] in case of ">3" , .filter will give us the 4,5,6 )
+--------------------------------------------------------
+[chaining >ka maqsad> aik conditiion lga di and us ky upar aik or condition lga skty han and like function py b use kr skty han ye chaining..]
+mtlb aik .reduce method k andar .filter/.map use kr lia that is chaining......
+
+map  done!!!!!!!!!!!!!
+---------------------------------------------------------
+array ky methods>bhot sary hty han array k methods> like every,forsum,,,,huge number of array methods.
+----------------------------------------------------
+>> so, we have covered array ky kuch methods: 
+.foreach(bhot zayda use hta),
+.filter,
+.map(bhot zayda use hota),
+.reduce, 
+and inka farq hta ha performance ka.....ye methods bhot zayada depend krty han app ki performance py...
+
+IMPORTANT NOTE below:
+interview question inhi 4methods sy aty han.......v.imp'
+
+------------------------------------------------------
+IIFE > hm ny func bnaya,jo usi waqt chal jaty,khin or seprataly call nahin krna parta...
+
+IIFE kiyun use krty han???(IMP interview question)
+IMP interview question/point > funcion ky global scoped ki pollution sy bachny keliye hm isko IIFE use krty han...
+
+named IIFE and IIFE(Arrow function,nameless without name so its called just IIFE)
+
+-------------------------------------------------------
+minihoisting and global scoped...10min topcs
+------------------------------------------------------- 
+-------------------------------------------------------
+
+-------------------------------------------------------
+-------------------------------------------------------
+Tomorrow: 9apr ko,,,but it was off,,,
+so now we will start today 10apr ko..> 
+so, now, we started/read on 10 apr thursday. 
+and we covered remaining 2 moror methods of array> 
+.map and .reduce>(examples like code will be/is on register in written form) 
+
+reduce method>"shopping cart"...pichli values store rakhta ha...
+and immidiately invked functions(IIFE>"normally, ham function ko usko usky name sy call krty han....lekin IIFE mn jysy bnaty ha wysy call ho jata ha,...
+aysi cheezein jo mn kehta hn k foran sy phly run ho jaein and mtlb hmein wait nahin krna parta..quick response")....
+
+{
+tomorrow>we will start from 11apr
+objects parhein gy..
+.this keyword>ES5 mn nahin tha>6 mn aya tha..
+
+browser mn and node env mn kia values return krtaha..
+
+for-in and for-off(i think he said how did they relate/used in foreach) 
+and also we will discuss ky object py kysy iteratrate krna ha..
+
+then DOM and (and alos problem solving question so that previous examples should remain in mind)...
+and then
+async and sync...and promises....
+then we will start REACT(finally)...
+}
+
+
+
