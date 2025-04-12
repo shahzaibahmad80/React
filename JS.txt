@@ -69,24 +69,67 @@ q.k >foreach mehtod kbhi b "newArray" return nahin krta::"ye sirf iterate krta h
 so,foreach ka return type "undefined" hota ha.
 -------------------------------------------------------------------------------------------------
 ;;;;
-but i want k foreach newArray return kry then what???
-we user filters.....(we can also use map"gpt")
->>>so we use filters...
+ >>>>>>  >>   >>   >   > but i want k foreach newArray return kry then what???
+we user filters.....(we can also use map as well implemented the example.)
+>>>so we use filters...()also
 myArr.filter()
 
-">filter() bhi aik call back fun lyga like foreach..."
-kuch condition lga kr hmein new array return kr rah tha..
-----
+">filter() bhi aik call back fun lyga like foreach..."kuch condition lga kr hmein new array return kryga
+
+
+// < .filter() (One of Array Method in JavaScript)> 
+Har element ko check karta hai — aur sirf unhi elements ko return karta hai jo "condition ko pass" karte hain.
+ye ham tb use krty han jb hmein array se kuch items remove karne ho based on a condition.
+
+filter() har number ko check karta hai: kya wo even hai?
+
+Sirf even numbers ko rakhta hai.
+
+New array return karta hai — sirf matching items ke sath.
+
 ---------------------------------------------------------------------
 
---------------------
-
-{call back lazmi lyty han,,,foreach,map,reduce,filters}
---------------------
+--------------------------------------------------------------------------------
 .map > iterate kr skta ha and also perform actions as well like .filters.
+
 .map("> greater than" condition mn false and true return krta ha. )
 but .filter hmein ("> graeter than" case like Array is [1,2,3,4,5,6] in case of ">3" , .filter will give us the 4,5,6 )
+
+
+{call back lazmi lyty han ye 4 functions > .foreach,.map,reduce,filters}
+----------------------------------------------------------------------------
+
+// < .map (One of Array Method in JavaScript)> 
+
+hmara callback function jo bhi return karta hai, wo new array ka ek element ban jata hai.
+
+Har original element ka ek modified version tum return karte ho.
+.map > "hmein har element ke liye naya value(doubled 2*1=2,2*2=4...etc) return karna hota hai. Wo value direct "new array" mein add ho jata hai.""
+
+//ye ham tb use krty han jb "jb har item ko change/modify krna ho.""
+
+/Yahan return n * 2 ka matlab hai: "is element ko double karke new array mein daal do."
 --------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
+.map() vs .filter() — Differences Table
+				.map()								.filter()
+
+Purpose:		Elements ko transform karna					Elements ko select/remove karna
+Return: 		New array with same length					New array with fewer/same items
+Return Inside: 		Har callback return expected					Har callback mein true/false
+Original Change?	No (original array stays same)					No (original array stays same)
+
+
+Interview Tip:
+"map() har element ko transform karta hai aur ek new array banata hai. 
+filter() condition apply karta hai aur sirf unhi elements ko rakhta hai jo condition ko satisfy karte hain — dono new array return karte hain."
+---------------------------------------------------------
+---------------------------------------------------------
+real-life example in code. Script.js file. deployed on github(chaining concept will also be include there in code example.)
+---------------------------------------------------------
+---------------------------------------------------------
+---------------------------------------------------------
 [chaining >ka maqsad> aik conditiion lga di and us ky upar aik or condition lga skty han and like function py b use kr skty han ye chaining..]
 mtlb aik .reduce method k andar .filter/.map use kr lia that is chaining......
 
